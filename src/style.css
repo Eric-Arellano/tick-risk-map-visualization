@@ -28,6 +28,7 @@ p { line-height: 130%; }
 .mast {
     position: relative;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .primary-nav__list {
@@ -62,6 +63,12 @@ section {
     padding-left: 10%;
 }
 
+footer {
+    font-size: 75%;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
 
 /* ----------------------
     Map
@@ -71,4 +78,5 @@ section {
     height: 80%;
     width: 80%;
     margin-left: auto; margin-right: auto;
+    margin-bottom: 3em;
 }
