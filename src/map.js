@@ -8,6 +8,12 @@ function initMap() {
         zoom: 9
     });
 
+    var riskLayer = new google.maps.KmlLayer({
+        url: 'https://raw.githubusercontent.com/Eric-Arellano/tick-risk-map-visualization/kml-layer/data/zonas-de-riesgo.kml?time=' + new Date().getTime(),
+        map: map
+    });
+    riskLayer.setMap(map);
+
     // set up search box
     var input = document.getElementById('location-input');
     var searchBox = new google.maps.places.SearchBox(input);
