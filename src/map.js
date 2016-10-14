@@ -9,7 +9,7 @@ function initMap() {
     });
 
     var riskLayer = new google.maps.KmlLayer({
-        url: 'https://raw.githubusercontent.com/Eric-Arellano/tick-risk-map-visualization/kml-layer/data/zonas-de-riesgo.kml?time=' + new Date().getTime(),
+        url: 'https://raw.githubusercontent.com/Eric-Arellano/tick-risk-map-visualization/master/data/zonas-de-riesgo.kml?time=' + new Date().getTime(),
         map: map
     });
     riskLayer.setMap(map);
