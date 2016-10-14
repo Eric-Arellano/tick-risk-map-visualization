@@ -81,6 +81,13 @@ footer {
     margin-left: auto; margin-right: auto;
 }
 
+#location-input {
+    margin-top: .8em;
+    width: 13em;
+    padding: 0.5em 0.4em;
+    font-size: 110%;
+}
+
 #map-caption {
     margin-bottom: 3em;
     text-align: center;
