@@ -6,7 +6,19 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 110%;
 }
+
+/* ----------------------
+    Fonts
+-----------------------*/
+
+h1, h2, h3, h4 { font-family: 'Telex', sans-serif;  }
+
+p, ul { font-family: 'Lato', sans-serif; }
+
+p { line-height: 130%; }
+
 
 /* ----------------------
     Mast
@@ -41,4 +53,5 @@ html, body {
 
 #map {
     height: 80%;
+    width: auto;
 }
