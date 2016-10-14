@@ -11,6 +11,7 @@ address. Also include lists of recommendations to combat ticks.
 details on where high risk zones
 5. If time and information, change data depending on season
 6. If time, allow user to click on zones to get the information about zone
+7. If time, incorporate geolocation to show where user is.
 
 # Requirements
 
@@ -22,3 +23,4 @@ details on where high risk zones
 2. List information about how to fight ticks
 3. List information about the high risk zones
 4. Change information depending on the month (if time and information available)
+5. Show where user is located automatically (if time)
