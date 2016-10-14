@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Riesgo de Garrapatas</title>
+	<meta charset="utf-8">
+	<meta lang="es">
+	<meta name="viewport" content="initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300i|Telex"
+	      rel="stylesheet">
+</head>
+
+<body>
+<header class="mast">
+	<h1>Riesgo de Garrapatas</h1>
+	<nav>
+		<ul class="primary-nav__list">
+			<li class="primary-nav--selected">
+				<a href="map.html">Mapa de Riesgo</a>
+			</li>
+			<li>
+				<a href="suggestions.html">Cómo Combatirlas</a>
+			</li>
+		</ul>
+	</nav>
+	<hr>
+</header>
+
+<div id="map"></div>
+<script>
+	var jaliscoCoast = {lat: 19.67, lng: -104.67};
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: jaliscoCoast,
+			zoom: 9
+		});
+	}
+</script>
+<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfgt8K5q-VmaO5T5lkzgWgZADbbo3kfRk&callback=initMap"
+		async defer>
+</script>
+<div id="map-caption">
+	<p>Las zonas coloradas significan que existe riesgo de garrapatas.</p>
+</div>
+
+<footer>
+	<hr>
+	<p>Hecho para Eric Arellano, Diego, y Hedgar para el reto Destino
+		Sostenible durante Changemaker Day.</p>
+</footer>
+</body>
+
+</html>
