@@ -32,7 +32,6 @@ p { line-height: 130%; }
 
 .primary-nav__list {
     position: relative;
-    list-style-type: none;
 }
 
 .primary-nav__list li {
@@ -46,6 +45,12 @@ p { line-height: 130%; }
 
 .primary-nav--selected {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 45em) {
+    .primary-nav__list li {
+        display: block;
+    }
 }
 
 
