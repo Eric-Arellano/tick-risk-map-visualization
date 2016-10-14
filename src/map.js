@@ -1,4 +1,5 @@
 var map;
+var searchBox;
 
 function initMap() {
     var jaliscoCoast = new google.maps.LatLng(19.67, -104.67);
@@ -15,17 +16,28 @@ function initMap() {
     riskLayer.setMap(map);
 
     // set up search box
+    addSearchBox();
+
+}
+
+function addSearchBox() {
+    initializeSearchBox();
+    respondToSearch();
+}
+
+function initializeSearchBox() {
     var input = document.getElementById('location-input');
-    var searchBox = new google.maps.places.SearchBox(input);
+    searchBox = new google.maps.places.SearchBox(input);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-    map.addListener('bounds_changed', function() {
+    map.addListener('bounds_changed', function () {
         searchBox.setBounds(map.getBounds);
     });
+}
 
-    // respond to user selection
+function respondToSearch() {
     var markers = [];
-    searchBox.addListener('places_changed', function() {
+    searchBox.addListener('places_changed', function () {
         var places = searchBox.getPlaces();
 
         if (places.length == 0) {
@@ -33,14 +45,14 @@ function initMap() {
         }
 
         // Clear out the old markers.
-        markers.forEach(function(marker) {
+        markers.forEach(function (marker) {
             marker.setMap(null);
         });
         markers = [];
 
         // For each place, get the icon, name and location.
         var bounds = new google.maps.LatLngBounds();
-        places.forEach(function(place) {
+        places.forEach(function (place) {
             if (!place.geometry) {
                 console.log("Returned place contains no geometry");
                 return;
@@ -70,7 +82,5 @@ function initMap() {
         });
         map.fitBounds(bounds);
     });
-
-
 
 }
