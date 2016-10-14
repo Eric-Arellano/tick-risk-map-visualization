@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay id="3">
+	<name>Amblyomma_cajennense.asc</name>
+	<Snippet maxLines="0"></Snippet>
+	<color>69ffffff</color>
+	<drawOrder>997</drawOrder>
+	<Icon>
+		<href>Layer3.png</href>
+	</Icon>
+	<LatLonBox>
+		<north>32.99999999999987</north>
+		<south>-2.999999999999988</south>
+		<east>-87.00000000000013</east>
+		<west>-123</west>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
