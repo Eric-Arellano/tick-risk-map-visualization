@@ -14,12 +14,26 @@
 		}
 
 		#map {
-			height: 100%;
+			height: 80%;
 		}
 	</style>
 </head>
 
 <body>
+		<header class="mast">
+			<h1>Riesgo de Garrapatas</h1>
+			<nav>
+				<ul class="primary-nav__list">
+					<li class="primary-nav--selected">
+						<a href="map.html">Mapa de Riesgo</a>
+					</li>
+					<li>
+						<a href="suggestions.html">Cómo Combatirlas</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
 	<div id="map"></div>
 	<script>
 		var jaliscoCoast = {lat: 19.67, lng: -104.67};
