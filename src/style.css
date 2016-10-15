@@ -17,9 +17,9 @@ html, body {
 
 h1, h2, h3, h4 { font-family: 'Telex', sans-serif;  }
 
-p, ul { font-family: 'Lato', sans-serif; }
+p, ul, ol { font-family: 'Lato', sans-serif; }
 
-p { line-height: 130%; }
+p, ul, ol { line-height: 130%; }
 
 
 /* ----------------------
