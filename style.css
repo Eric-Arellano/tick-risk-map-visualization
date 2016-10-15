@@ -38,8 +38,12 @@ p, ul, ol { line-height: 130%; }
 }
 
 .primary-nav__list li {
-    display: inline;
-    padding: 0 2em;
+    display: inline-block;
+    padding: 0;
+}
+
+.primary-nav__list li:first-child {
+    padding-right: 1em;
 }
 
 .primary-nav__list a {
